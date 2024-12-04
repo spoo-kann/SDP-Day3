@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Listing Page</title>
+  <link rel="stylesheet" href="p3.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="header">
+    <div class="logo">MyShop</div>
+    <nav class="nav-menu">
+      <a href="#">Home</a>
+      <a href="#">Shop</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+    <div class="search-bar">
+      <input type="text" placeholder="Search products...">
+      <button>Search</button>
+    </div>
+    <div class="cart-icon">🛒</div>
+  </header>
+
+  <main class="main-content">
+    <!-- Sidebar Filters -->
+    <aside class="sidebar">
+      <h3>Filters</h3>
+      <div class="filter-group">
+        <h4>Category</h4>
+        <select>
+          <option>All Categories</option>
+          <option>Electronics</option>
+          <option>Fashion</option>
+          <option>Home & Garden</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <h4>Price Range</h4>
+        <input type="range" min="0" max="1000" step="50">
+      </div>
+      <div class="filter-group">
+        <h4>Brand</h4>
+        <select>
+          <option>All Brands</option>
+          <option>MAX</option>
+          <option>RELIANCE</option>
+          <option>MYNTRA</option>
+        </select>
+      </div>
+    </aside>
+
+    <!-- Product Grid -->
+    <section class="product-grid">
+      <div class="product-card">
+        <img src="laptop.jpg" alt="Product 1">
+        <h3>laptop</h3>
+        <p>34000</p>
+        <button>Add to Cart</button>
+      </div>
+      <!-- Repeat similar product cards for demonstration -->
+      <div class="product-card">
+        <img src="mobile.jpg" alt="Product 2">
+        <h3>Mobile</h3>
+        <p>26500</p>
+        <button>Add to Cart</button>
+      </div>
+      <!-- Add more product cards as needed -->
+    </section>
+  </main>
+
+  <!-- Pagination Section -->
+  <div class="pagination">
+    <button>Previous</button>
+    <button>1</button>
+    <button>2</button>
+    <button>3</button>
+    <button>Next</button>
+  </div>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <a href="#">Contact Us</a>
+    <a href="#">Privacy Policy</a>
+    <a href="#">Terms of Service</a>
+  </footer>
+</body>
+</html>

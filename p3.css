@@ -1,0 +1,135 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Header Section */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f4f4f4;
+  }
+  
+  .nav-menu {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .search-bar input {
+    padding: 5px;
+  }
+  
+  .cart-icon {
+    font-size: 1.5rem;
+  }
+  
+  /* Main Content Layout */
+  .main-content {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+  }
+  
+  /* Sidebar Filters */
+  .sidebar {
+    flex: 1 1 25%;
+    max-width: 25%;
+    padding: 20px;
+    background-color: #fafafa;
+    border-right: 1px solid #ddd;
+  }
+  
+  .filter-group {
+    margin-bottom: 20px;
+  }
+  
+  .filter-group h4 {
+    margin: 10px 0;
+  }
+  
+  /* Product Grid */
+  .product-grid {
+    flex: 1 1 75%;
+    max-width: 75%;
+    display: grid;
+    gap: 20px;
+  }
+  
+  .product-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .product-card img {
+    max-width: 50%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Pagination Section */
+  .pagination {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .pagination button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .pagination button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Footer Section */
+  .footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  .footer a {
+    color: white;
+    margin: 0 10px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .sidebar {
+      display: none;
+    }
+  
+    .product-grid {
+      max-width: 100%;
+      flex: 1;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .product-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .footer {
+      text-align: left;
+      padding: 20px;
+    }
+  }
+  
